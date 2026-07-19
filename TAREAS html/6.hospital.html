@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Gestión Hospitalaria</title>
+</head>
+<body>
+
+<center id="top">
+<table width="100%" bgcolor="#117864" cellpadding="20" cellspacing="0" border="0">
+    <tr>
+        <td align="center">
+            <img src="https://via.placeholder.com/120x120/ffffff/117864?text=LOGO" alt="Logo Hospital" border="0"><br>
+            <font size="7" color="#ffffff" face="Arial Black, Arial"><b>Hospital Central</b></font>
+            <br>
+
+            <font color="#ffffff" size="4"><b>Sistema de Gestión Hospitalaria             <br>
+Cuidando tu salud las 24 horas </b></font>
+            <br>
+            <font size="4" color="#ffffff">
+                <a href="#login"><font color="#ffffff"><b> Login</b></font></a> &nbsp;&nbsp;&nbsp;
+                <a href="#panel"><font color="#ffffff"><b> Panel Principal</b></font></a> &nbsp;&nbsp;&nbsp;
+                <a href="#pacientes"><font color="#ffffff"><b>Pacientes</b></font></a> &nbsp;&nbsp;&nbsp;
+                <a href="#medicos"><font color="#ffffff"><b> Médicos</b></font></a> &nbsp;&nbsp;&nbsp;
+                <a href="#consultas"><font color="#ffffff"><b> Consultas</b></font></a> &nbsp;&nbsp;&nbsp;
+                <a href="#medicamentos"><font color="#ffffff"><b> Medicamentos</b></font></a> &nbsp;&nbsp;&nbsp;
+                <a href="#facturacion"><font color="#ffffff"><b> Facturación</b></font></a> &nbsp;&nbsp;&nbsp;
+                <a href="#contacto"><font color="#ffffff"><b>📞 Contacto</b></font></a>
+            </font>
+        </td>
+    </tr>
+</table>
+</center>
+
+<hr size="3" color="#117864" width="100%">
+
+<center id="login">
+<table width="60%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="2" bordercolor="#a3e4d7">
+    <tr>
+        <td align="center" bgcolor="#e8f8f5">
+            <font size="6" color="#117864"><b>🔐 Iniciar Sesión</b></font>
+            <p>
+            <form action="#" method="post">
+                <table align="center" border="0" cellpadding="10" cellspacing="5">
+                    <tr>
+                        <td align="right"><font size="3" color="#000000"><b>Usuario:</b></font></td>
+                        <td align="left"><input type="text" id="usuario" name="usuario" required size="30"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><font size="3" color="#000000"><b>Contraseña:</b></font></td>
+                        <td align="left"><input type="password" id="contrasena" name="contrasena" required size="30"></td>
+                    </tr>
+                    <tr>
+                        <td align="right"><font size="3" color="#000000"><b>Rol:</b></font></td>
+                        <td align="left">
+                            <select id="rol" name="rol">
+                                <option value="admin">Administrador</option>
+                                <option value="medico">Médico</option>
+                                <option value="enfermeria">Enfermería</option>
+                                <option value="recepcion">Recepción</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="center">
+                            <button type="submit" style="background-color:#117864;color:#ffffff;padding:8px 25px;"><font size="4"><b>Ingresar</b></font></button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </td>
+    </tr>
+</table>
+</center>
+
+<hr size="3" color="#117864" width="100%">
+
+<center id="panel">
+<table width="90%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="2" bordercolor="#a3e4d7">
+    <tr>
+        <td align="center">
+            <font size="6" color="#117864"><b>📊 Panel Principal</b></font>
+            <p>
+            <marquee behavior="alternate" scrollamount="2">
+                <font color="#000000" size="3"><b>📌 Resumen general del hospital al día de hoy</b></font>
+            </marquee>
+            <p>
+            <table align="center" border="3" cellpadding="15" cellspacing="15" width="90%" bgcolor="#f4fefb">
+                <tr>
+                    <td align="center" bgcolor="#a9dfbf" width="25%">
+                        <font size="6"><b>🧑‍🤝‍🧑</b></font><br>
+                        <font size="5" color="#000000"><b>128</b></font><br>
+                        <font size="3" color="#000000">Pacientes activos</font>
+                    </td>
+                    <td align="center" bgcolor="#aed6f1" width="25%">
+                        <font size="6"><b>👨‍⚕️</b></font><br>
+                        <font size="5" color="#000000"><b>32</b></font><br>
+                        <font size="3" color="#000000">Médicos disponibles</font>
+                    </td>
+                    <td align="center" bgcolor="#f9e79f" width="25%">
+                        <font size="6"><b>📋</b></font><br>
+                        <font size="5" color="#000000"><b>45</b></font><br>
+                        <font size="3" color="#000000">Consultas hoy</font>
+                    </td>
+                    <td align="center" bgcolor="#f5b7b1" width="25%">
+                        <font size="6"><b>🛏️</b></font><br>
+                        <font size="5" color="#000000"><b>12</b></font><br>
+                        <font size="3" color="#000000">Camas disponibles</font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</center>
+
+<hr size="3" color="#117864" width="100%">
+
+<center id="pacientes">
+<table width="90%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="2" bordercolor="#a3e4d7">
+    <tr>
+        <td align="center" bgcolor="#e8f8f5">
+            <font size="6" color="#117864"><b> Pacientes</b></font>
+            <p>
+            <table align="center" border="1" cellpadding="10" cellspacing="0" width="95%" bgcolor="#ffffff">
+                <tr bgcolor="#117864">
+                    <th><font color="#ffffff" size="3"><b>Nombre</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Edad</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Expediente</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Médico asignado</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Estado</b></font></th>
+                </tr>
+                <tr bgcolor="#d5f4e6" align="center">
+                    <td><font size="3">Ana Torres</font></td>
+                    <td><font size="3">34</font></td>
+                    <td><font size="3">EXP-1023</font></td>
+                    <td><font size="3">Dr. Luis Herrera</font></td>
+                    <td><font size="4" color="#27ae60"><b>✅ Estable</b></font></td>
+                </tr>
+                <tr bgcolor="#d6eaf8" align="center">
+                    <td><font size="3">Carlos Muñoz</font></td>
+                    <td><font size="3">58</font></td>
+                    <td><font size="3">EXP-1024</font></td>
+                    <td><font size="3">Dra. Sofía Vargas</font></td>
+                    <td><font size="4" color="#e67e22"><b>⚠️ En observación</b></font></td>
+                </tr>
+                <tr bgcolor="#fadbd8" align="center">
+                    <td><font size="3">Lucía Ramírez</font></td>
+                    <td><font size="3">7</font></td>
+                    <td><font size="3">EXP-1025</font></td>
+                    <td><font size="3">Dr. Luis Herrera</font></td>
+                    <td><font size="4" color="#e74c3c"><b>🚨 Urgente</b></font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</center>
+
+<hr size="3" color="#117864" width="100%">
+
+<center id="medicos">
+<table width="90%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="2" bordercolor="#a3e4d7">
+    <tr>
+        <td align="center">
+            <font size="6" color="#117864"><b> Médicos</b></font>
+            <p>
+            <table align="center" border="3" cellpadding="15" cellspacing="15" width="90%" bgcolor="#f8f9fa">
+                <tr>
+                    <td align="center" bgcolor="#d6eaf8" width="33%">
+                        <img src="https://via.placeholder.com/100x100/117864/ffffff?text=Dr" alt="Dr. Luis Herrera" border="2"><br>
+                        <font size="4" color="#000000"><b>Dr. Luis Herrera</b></font><br>
+                        <font size="3" color="#117864"><b>Cardiología</b></font>
+                    </td>
+                    <td align="center" bgcolor="#d6eaf8" width="33%">
+                        <img src="https://via.placeholder.com/100x100/117864/ffffff?text=Dra" alt="Dra. Sofía Vargas" border="2"><br>
+                        <font size="4" color="#000000"><b>Dra. Sofía Vargas</b></font><br>
+                        <font size="3" color="#117864"><b>Pediatría</b></font>
+                    </td>
+                    <td align="center" bgcolor="#d6eaf8" width="33%">
+                        <img src="https://via.placeholder.com/100x100/117864/ffffff?text=Dr" alt="Dr. Mario Solís" border="2"><br>
+                        <font size="4" color="#000000"><b>Dr. Mario Solís</b></font><br>
+                        <font size="3" color="#117864"><b>Traumatología</b></font>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</center>
+
+<hr size="3" color="#117864" width="100%">
+
+<center id="consultas">
+<table width="90%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="2" bordercolor="#a3e4d7">
+    <tr>
+        <td align="center" bgcolor="#fef9e7">
+            <font size="6" color="#117864"><b>📋 Consultas</b></font>
+            <p>
+                <font color="#000000" size="3"><b>📆 Agenda de consultas médicas programadas</b></font>
+            <p>
+            <table align="center" border="1" cellpadding="10" cellspacing="0" width="95%" bgcolor="#ffffff">
+                <tr bgcolor="#117864">
+                    <th><font color="#ffffff" size="3"><b>Paciente</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Médico</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Fecha</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Hora</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Motivo</b></font></th>
+                </tr>
+                <tr bgcolor="#fef9e7" align="center">
+                    <td><font size="3">Ana Torres</font></td>
+                    <td><font size="3">Dr. Luis Herrera</font></td>
+                    <td><font size="3">18/07/2026</font></td>
+                    <td><font size="3">09:00 AM</font></td>
+                    <td><font size="3">Control cardiológico</font></td>
+                </tr>
+                <tr bgcolor="#fdebd0" align="center">
+                    <td><font size="3">Lucía Ramírez</font></td>
+                    <td><font size="3">Dra. Sofía Vargas</font></td>
+                    <td><font size="3">18/07/2026</font></td>
+                    <td><font size="3">11:30 AM</font></td>
+                    <td><font size="3">Fiebre y tos</font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</center>
+
+<hr size="3" color="#117864" width="100%">
+
+<center id="medicamentos">
+<table width="90%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="2" bordercolor="#a3e4d7">
+    <tr>
+        <td align="center">
+            <font size="6" color="#117864"><b>Medicamentos</b></font>
+            <p>
+            <table align="center" border="1" cellpadding="10" cellspacing="0" width="95%" bgcolor="#f8f9fa">
+                <tr bgcolor="#117864">
+                    <th><font color="#ffffff" size="3"><b>Medicamento</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Presentación</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Existencia</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Estado</b></font></th>
+                </tr>
+                <tr bgcolor="#d5f4e6" align="center">
+                    <td><font size="3">Paracetamol</font></td>
+                    <td><font size="3">Tabletas 500mg</font></td>
+                    <td><font size="3">320</font></td>
+                    <td><font size="4" color="#27ae60"><b>✅ Disponible</b></font></td>
+                </tr>
+                <tr bgcolor="#fadbd8" align="center">
+                    <td><font size="3">Amoxicilina</font></td>
+                    <td><font size="3">Cápsulas 250mg</font></td>
+                    <td><font size="3">15</font></td>
+                    <td><font size="4" color="#e74c3c"><b>⚠️ Stock bajo</b></font></td>
+                </tr>
+                <tr bgcolor="#d5f4e6" align="center">
+                    <td><font size="3">Ibuprofeno</font></td>
+                    <td><font size="3">Tabletas 400mg</font></td>
+                    <td><font size="3">210</font></td>
+                    <td><font size="4" color="#27ae60"><b>✅ Disponible</b></font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</center>
+
+<hr size="3" color="#117864" width="100%">
+
+<center id="facturacion">
+<table width="90%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="2" bordercolor="#a3e4d7">
+    <tr>
+        <td align="center" bgcolor="#e8f8f5">
+            <font size="6" color="#117864"><b>🧾 Facturación</b></font>
+            <p>
+            <table align="center" border="1" cellpadding="10" cellspacing="0" width="95%" bgcolor="#ffffff">
+                <tr bgcolor="#117864">
+                    <th><font color="#ffffff" size="3"><b>Factura</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Paciente</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Servicio</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Monto</b></font></th>
+                    <th><font color="#ffffff" size="3"><b>Estado</b></font></th>
+                </tr>
+                <tr bgcolor="#d6eaf8" align="center">
+                    <td><font size="3">FAC-0001</font></td>
+                    <td><font size="3">Ana Torres</font></td>
+                    <td><font size="3">Consulta cardiología</font></td>
+                    <td><font size="3">Q250.00</font></td>
+                    <td><font size="4" color="#27ae60"><b>✅ Pagado</b></font></td>
+                </tr>
+                <tr bgcolor="#fadbd8" align="center">
+                    <td><font size="3">FAC-0002</font></td>
+                    <td><font size="3">Carlos Muñoz</font></td>
+                    <td><font size="3">Hospitalización</font></td>
+                    <td><font size="3">Q3,200.00</font></td>
+                    <td><font size="4" color="#e74c3c"><b>⏳ Pendiente</b></font></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+</center>
+
+<hr size="3" color="#117864" width="100%">
+
+<center id="contacto">
+<table width="90%" bgcolor="#ffffff" cellpadding="20" cellspacing="0" border="2" bordercolor="#a3e4d7">
+    <tr>
+        <td align="center">
+            <font size="6" color="#117864"><b>📞 Contacto</b></font>
+            <p>
+            <font size="3" color="#000000">
+                📍 6ta Avenida 12-45 Zona 10, Ciudad de Guatemala &nbsp; | &nbsp;
+                📞 Tel: (502) 2345-6789 &nbsp; | &nbsp;
+                ✉️ contacto@hospitalcentral.org
+            </font>
+            <p>
+            <font size="3" color="#000000"><b>🚑 Emergencias 24/7: (502) 2345-0000</b></font>
+        </td>
+    </tr>
+</table>
+</center>
+
+<hr size="3" color="#117864" width="100%">
+
+<center>
+<table width="100%" bgcolor="#117864" cellpadding="15" cellspacing="0" border="0">
+    <tr>
+        <td align="center">
+            <font size="4" color="#ffffff"><b>🏥 Hospital Central - Cuidando tu salud</b></font>
+            <p>
+            <font size="2" color="#ffffff">
+                &copy; 2026 <a href="#top"><font color="#ffffff"><b>Hospital Central</b></font></a>. Todos los derechos reservados. | <a href="#top"><font color="#ffffff"><b>⬆️ Volver al inicio</b></font></a>
+            </font>
+        </td>
+    </tr>
+</table>
+</center>
+
+</body>
+</html>
